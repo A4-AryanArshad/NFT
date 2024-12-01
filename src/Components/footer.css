@@ -1,0 +1,122 @@
+.footer-container {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .foot {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping for small screens */
+  }
+  
+  .connect-icons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Icons will wrap if needed on small screens */
+  }
+  
+  .connect-icons h1 {
+    color: white;
+    padding-left: 20px;
+    margin-right: 20px;
+    flex-shrink: 0; /* Prevents h1 from shrinking on smaller screens */
+    font-size: 1.5rem; /* Responsive font size */
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Makes icons wrap on small screens */
+    gap: 10px; /* Adds space between icons */
+  }
+  
+  .icon a {
+    color: white;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .icon a:hover {
+    color:purple;
+    font-weight: bold;
+    transition: 0.3s;
+
+ 
+  }
+  
+  .footer-links {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  
+  .footer-links a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: purple; /* Hover color for links */
+    transition: color 0.3s ease;
+    
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    .footer-container {
+      text-align: center;
+    }
+  
+    .foot {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      align-items: center;
+    }
+  
+    .connect-icons h1 {
+      padding-left: 0;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  
+    .icon {
+      justify-content: center;
+      padding-left: 0;
+    }
+  
+    .footer-links {
+      padding-left: 0;
+      padding-top: 20px;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .connect-icons h1 {
+      font-size: 1.2rem; /* Smaller font size for mobile */
+    }
+  
+    .icon a {
+      font-size: 1.5rem; /* Adjust icon size for smaller screens */
+      margin-right: 10px;
+    }
+  
+    .footer-links a {
+      margin-right: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .connect-icons h1 {
+      font-size: 1rem;
+    }
+  
+    .icon a {
+      font-size: 1.2rem;
+      margin-right: 5px;
+    }
+  }
+  
