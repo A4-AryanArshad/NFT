@@ -1,0 +1,28 @@
+#foot{
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 90px;
+    text-align: center;
+}
+
+@media screen and (max-width: 931px) {
+    #foot p{
+        width: 700px;
+    }
+  }
+
+  @media screen and (max-width: 726px) {
+    #foot p{
+        width: 400px;
+    }
+  }
+
+  @media screen and (max-width: 441px) {
+    #foot p{
+        width: 300px;
+    }
+  }

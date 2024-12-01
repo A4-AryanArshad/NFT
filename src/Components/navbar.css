@@ -1,0 +1,163 @@
+/* Navbar Styles */
+.search-button {
+  background-color: black; /* Initial background color */
+  color: white; /* Initial text color */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Dropdown menu positioning */
+.dropdown-menu {
+  margin: 0;
+  padding: 0;
+  border: none;
+  position: absolute;
+  right: 0; /* Align dropdown to the right */
+  left: auto; /* Remove left alignment */
+  top: 100%;
+  z-index: 1000;
+}
+
+/* Dropdown item styles */
+.dropdown-item {
+  color: black;
+  background-color: black;
+}
+
+.dropdown-item:hover {
+  background-color: azure;
+  color: black;
+}
+
+/* Button hover effects */
+.search-button:hover {
+  background-color: azure;
+  color: black;
+}
+
+/* Dropdown menu item hover styles */
+.dropdown-menu .dropdown-item {
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Navbar item styles */
+.nav-item {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: oblique;
+}
+
+.nav-item:hover {
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: black;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: azure;
+  color: black;
+}
+
+/* Fix for small screen sizes */
+@media (max-width: 1024px) {
+  /* Adjust the navbar layout for tablets */
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    display: block;
+    width: 100%;
+  }
+
+  /* Ensure dropdown behaves correctly on tablets and small screens */
+  .dropdown-menu {
+    position: static;
+    width: 100%; /* Make the dropdown width match the navbar */
+    left: 0;
+    top: auto;
+    margin-top: 0; /* Remove any extra margin */
+  }
+
+  .dropdown-menu li {
+    text-align: center; /* Center-align dropdown items */
+  }
+
+  /* Adjust padding on tablet */
+  .nav-item {
+    padding: 10px 0;
+  }
+}
+
+/* Additional styles for search form */
+.form-control {
+  width: 250px; /* Adjust width for search input */
+}
+
+.search-button {
+  width: 100px; /* Fixed width for search button */
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+  font-size: 25px;
+  font-family: "monospace";
+  font-style: oblique;
+  font-weight: bold;
+}
+
+/* Ensure proper navbar behavior on mobile screens */
+@media (max-width: 768px) {
+  /* Center-align the navbar items for small screens */
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    display: block;
+  }
+
+  /* Ensure dropdown behaves correctly in smaller screens */
+  .dropdown-menu {
+    position: static;
+    width: 100%; /* Make the dropdown width match the navbar */
+    left: 0;
+  }
+
+  .dropdown-menu li {
+    text-align: center; /* Center-align dropdown items */
+  }
+
+  /* Adjust the button sizes */
+  .btn-primary {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .form-control {
+    width: 200px; /* Adjust width for mobile search input */
+  }
+
+  .search-button {
+    width: 90px; /* Fixed width for search button */
+  }
+}
+
+/* Fix navbar-toggler to align left */
+.navbar-toggler {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
